@@ -1,7 +1,7 @@
     google.maps.event.addDomListener(window, 'load', function() {
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 17,
-            center: new google.maps.LatLng(50.0807243, 14.42761710000002),
+            center: new google.maps.LatLng(50.0874032, 14.4049715),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             /* mapTypeControl: false,
              navigationControl: false,
@@ -10,7 +10,7 @@
              draggable: false,*/
             zoomControl: false,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(50.0807243, 14.42761710000002),
+            center: new google.maps.LatLng(50.0874032, 14.4049715),
 
             /*navigationControlOptions: {
              style: google.maps.NavigationControlStyle.SMALL
@@ -23,40 +23,18 @@
             // This is where you would paste any style found on Snazzy Maps.
             styles:[
                 {
-                    "featureType": "administrative.locality",
-                    "elementType": "geometry",
+                    "featureType": "all",
+                    "elementType": "all",
                     "stylers": [
                         {
-                            "visibility": "on"
+                            "saturation": -100
                         },
                         {
-                            "color": "#e41515"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative.locality",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "hue": "#ff0000"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative.locality",
-                    "elementType": "labels.icon",
-                    "stylers": [
-                        {
-                            "color": "#e11414"
+                            "gamma": 0.5
                         }
                     ]
                 }
             ]
-
 
         });
 
@@ -75,8 +53,8 @@
 
         var marker1 = new google.maps.Marker({
             map: map,
-            title: '<div class="title-map">Václavské náměstí, 48</div>',
-            position: new google.maps.LatLng(50.0807243, 14.42761710000002)
+            title: '<div class="title-map">Mostecká 273/21 Malá Strana - Praha 1, 118 00</div>',
+            position: new google.maps.LatLng(50.0874032, 14.4049715)
             //icon: "img/marker.png"
         });
 

@@ -64,16 +64,16 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true,
-        speed: 1000,
+        //variableWidth: true,
+        speed: 1500,
         autoplay: true,
         autoplaySpeed: 2000,
         dots: false,
         //centerMode: true,
         //centerPadding: '4px',
-        appendArrows: $('.b-nav'),
+        /*appendArrows: $('.b-nav'),
         prevArrow: '<button id="prev" type="button" class="slick-arrow--prev"></button>',
-        nextArrow: '<button id="next" type="button" class="slick-arrow--next"></button>',
+        nextArrow: '<button id="next" type="button" class="slick-arrow--next"></button>',*/
         responsive: [
             /*{
              breakpoint: 640,
